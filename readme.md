@@ -2,8 +2,14 @@ I am sorry for delaying the publishing process due to company issue and my perso
 
 Note: In this codebase, we also extend the model architecture to DiT (with frequency module) and find that the DiT-B/2 could achieve 5.7 FID on CelebA-HQ after 700 epochs. Training on Imagenet is resource-consuming so we only train for 560 epochs and achieve FID 16.75 for 1 NFE.
 
+## Quantitative Model Performance 
+
 <img width="612" height="351" alt="image" src="https://github.com/user-attachments/assets/2d48a06f-10ac-4b05-b71c-7c7c96f62fd2" />
 <img width="369" height="467" alt="image" src="https://github.com/user-attachments/assets/3ddd6a94-2c8a-4bc0-810d-e89dd0b13b7f" />
+
+## Qualitative Samples
+
+<img width="628" height="327" alt="image" src="https://github.com/user-attachments/assets/62a313a3-29d6-4fa8-b563-d47ee2f6e526" />
 
 
 ## Training and Sampling
