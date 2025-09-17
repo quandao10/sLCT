@@ -120,10 +120,10 @@ export MASTER_PORT=10139
 
 # resume525_mean-0.8_std1.5_diff0.70_lamb50
 
-for epoch in 550 575 600 625 650 675 700
+for epoch in 650
 do
         CUDA_VISIBLE_DEVICES=4,5,6,7 torchrun --nnodes=1 --rdzv_endpoint 0.0.0.0:$MASTER_PORT --nproc_per_node=4 test_cm_latent_ddp.py \
-                --ckpt /research/cbim/medical/qd66/lct_v2_new/imagenet_256_va/va_DiT_XL/2_v2/checkpoints/0000${epoch}.pt \
+                --ckpt /research/cbim/medical/qd66/lct_v2_new/imagenet_256_va/va_DiT_ve_repa_register_0_L_premlp_noot_karras-0.8,1.5_diff_0.70_rho7_ict_nograd_resume500/checkpoints/0000${epoch}.pt \
                 --seed 42 \
                 --dataset imagenet_256_va \
                 --image-size 16 \
@@ -135,7 +135,7 @@ do
                 --num-head-channels 64 \
                 --num-res-blocks 4 \
                 --resblock-updown \
-                --model-type DiT-XL/2 \
+                --model-type DiT-L/2 \
                 --channel-mult 1,2,3,4 \
                 --attention-resolutions 16,8 \
                 --sampler onestep \
@@ -148,7 +148,7 @@ do
                 --norm-type rms \
                 --freq-type prev_mlp \
                 --use-rope \
-                --cfg-scale 1.0 \
+                --cfg-scale 1.5 \
                 --c-type edm \
                 --fwd ve \
                 --p-mean -0.8 \

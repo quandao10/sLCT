@@ -1133,6 +1133,7 @@ Epoch = 0000595, FID = 21.06570105752445, cfg_scale = 1.0
 Epoch = 0000595, FID = 20.590356032588943, cfg_scale = 1.0
 Epoch = 0000595, FID = 20.114758745830727, cfg_scale = 1.0
 
+expva_DiT_ve_repa_register_0_L_premlp_noot_karras-0.8,1.5_diff_0.70_rho7_ict_nograd_resume500
 Epoch = 0000650, FID = 17.325801975565184, cfg_scale = 1.0
 Epoch = 0000650, FID = 17.17125613851249, cfg_scale = 1.0
 Epoch = 0000650, FID = 17.23327403872787, cfg_scale = 1.0
@@ -1156,3 +1157,7 @@ Epoch = 0000550, FID = 22.464514533583383, cfg_scale = 1.0
 Epoch = 0000575, FID = 21.791791483982877, cfg_scale = 1.0
 Epoch = 0000600, FID = 21.295091976846606, cfg_scale = 1.0
 Epoch = 0000625, FID = 20.69484334927313, cfg_scale = 1.0
+
+Epoch = 0000650, FID = 16.156764373456667, cfg_scale = 1.25
+
+Epoch = 0000650, FID = 25.27788467868021, cfg_scale = 1.5

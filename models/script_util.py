@@ -1,6 +1,5 @@
 import argparse
 from .karras_diffusion import KarrasDenoiser, FlowDenoiser, ContinuousKarrasDenoiser
-from .ksd_diffusion import KSD_Denoiser
 from .unet import UNetModel
 import numpy as np
 from .network_karras import SongUNet, DhariwalUNet
